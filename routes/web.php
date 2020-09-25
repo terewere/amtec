@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 
 Route::resource('subjects', 'SubjectController');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
