@@ -22,3 +22,4 @@ Route::resource('subjects', 'SubjectController');
 Route::resource('students', 'StudentController');
 Route::resource('attendances', 'AttendanceController');
 Route::resource('gradesystems', 'GradesystemController');
+Route::resource('grades', 'GradeController');
