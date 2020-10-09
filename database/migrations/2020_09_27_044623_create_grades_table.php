@@ -24,10 +24,6 @@ class CreateGradesTable extends Migration
 
               $table->float('marks', 8, 2);//final exam
             $table->float('attendance', 8, 2);
-        
-           
-          
-           
             $table->integer('exam_id')->unsigned();
             $table->integer('student_id')->unsigned();
             $table->integer('teacher_id')->unsigned();
