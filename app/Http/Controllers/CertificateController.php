@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subject;
+use App\Models\Certificate;
 use Illuminate\Http\Request;
 
-class SubjectController extends Controller
+class CertificateController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SubjectController extends Controller
      */
     public function index()
     {
-       return 'hello';
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class SubjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Certificate  $certificate
      * @return \Illuminate\Http\Response
      */
-    public function show(Subject $subject)
+    public function show(Certificate $certificate)
     {
         //
     }
@@ -52,10 +52,10 @@ class SubjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Certificate  $certificate
      * @return \Illuminate\Http\Response
      */
-    public function edit(Subject $subject)
+    public function edit(Certificate $certificate)
     {
         //
     }
@@ -64,10 +64,10 @@ class SubjectController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Certificate  $certificate
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Subject $subject)
+    public function update(Request $request, Certificate $certificate)
     {
         //
     }
@@ -75,10 +75,10 @@ class SubjectController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Certificate  $certificate
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Subject $subject)
+    public function destroy(Certificate $certificate)
     {
         //
     }

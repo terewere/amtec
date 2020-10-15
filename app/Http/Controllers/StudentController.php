@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subject;
+use App\Models\Student;
 use Illuminate\Http\Request;
+use DataTables;
 
-class SubjectController extends Controller
+class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,15 @@ class SubjectController extends Controller
      */
     public function index()
     {
-       return 'hello';
+        return view('students.index');
+    }
+
+
+    public function getStudentData()
+    {
+        $users = \App\Models\User::select(['id','name','created_at','updated_at']);
+
+        return Datatables::of($users)->make();
     }
 
     /**
@@ -41,10 +50,10 @@ class SubjectController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Subject $subject)
+    public function show(Student $student)
     {
         //
     }
@@ -52,10 +61,10 @@ class SubjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function edit(Subject $subject)
+    public function edit(Student $student)
     {
         //
     }
@@ -64,10 +73,10 @@ class SubjectController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Subject $subject)
+    public function update(Request $request, Student $student)
     {
         //
     }
@@ -75,10 +84,10 @@ class SubjectController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Subject  $subject
+     * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Subject $subject)
+    public function destroy(Student $student)
     {
         //
     }

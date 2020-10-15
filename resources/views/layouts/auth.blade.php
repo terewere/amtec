@@ -1,9 +1,3 @@
-
-
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -15,6 +9,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <title>{{ config('app.name', 'AMTECH') }}</title>
 
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,22 +26,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
-  <!-- Navbar -->
-@include('commons.header')
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
- @include('commons.navigation')
-
 @yield('content')
 
   <!-- Main Footer -->
   
   @include('commons.footer')
-
-  <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" ></script>
-
   @yield('scripts')
 </div>
 <!-- ./wrapper -->
