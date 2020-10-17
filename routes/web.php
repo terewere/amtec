@@ -15,6 +15,8 @@ Route::resource('teachers', App\Http\Controllers\StudentController::class);
 Route::get('teachers-data', [App\Http\Controllers\StudentController::class, 'getTeacherData']);
 
 
+
+
 Auth::routes();
 
 
