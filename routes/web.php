@@ -12,7 +12,7 @@ Route::get('students-data', [App\Http\Controllers\StudentController::class, 'get
 
 
 Route::resource('teachers', App\Http\Controllers\TeacherController::class);
-Route::get('teachers-data', [App\Http\Controllers\TeacherController::class, 'getTeacherData]);
+Route::get('teachers-data', [App\Http\Controllers\TeacherController::class, 'getTeacherData']);
 
 
 
