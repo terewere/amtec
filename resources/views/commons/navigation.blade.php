@@ -55,7 +55,7 @@
             <a href="{{ route('subjects.index') }}" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-              Subjects
+              Subjectss
               </p>
             </a>
           </li>
